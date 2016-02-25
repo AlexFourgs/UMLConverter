@@ -1,0 +1,26 @@
+\section{Spécification}
+\label{sec:specification}
+
+\paragraph{Avant de commencer} Avant toute action sur le logiciel, l'utilisateur doit créer un nouveau projet.
+
+\subsection{Dessiner son UML}
+\label{sec:spec1}
+
+\paragraph{} L'utilisateur peut, si il le souhaite, dessiner un diagramme UML. Pour cela, plusieurs boutons lui sont proposés. Il peut créer différents packages pour ranger ses classes, il peut également créer des classes, classes abstraites et interfaces qu'il pourra, à leur création ou plus tard, incorporer dans le package de son choix. Dans le moteur du logiciel, il faut savoir que des données sont tout simplement créées et stockées.
+Initialement, elles sont placées dans le package par défaut. Une fois ses classes, classes abstraites et interfaces créées, il pourra les associer entre elles comme par exemple lier deux classes avec un héritage ou encore une composition. Il peut également, si il le souhaite, implémenter une classe avec une interface.\\Si il se trompe, l'utilisateur peut supprimer un lien mais également éditer voir supprimer une classe. Il n'aura pas besoin de supprimer les packages, seuls les packages ayant au moins une classe seront affichés.
+
+
+\subsection{Convertir son UML en code Java}
+\label{sec:spec2}
+
+\paragraph{} Lors de la conversion de l'UML en code Java, les données qui ont été créées lors de la création des différents packages, classes ... sont "lu" a partir de l'objet "Project" qui contient toutes ces données. Par la suite, il suffit de récupérer, dans ces données, le code correspondant à leur représentation en code Java.
+
+\subsection{Ecrire un code Java}
+\label{sec:spec3}
+
+\paragraph{} Une fois son projet converti en code, l'utilisateur peut commencer un début de code simple sur ces données. On parle ici de code simple car il ne pourra créer directement ni package ni classe à travers l'éditeur de fichier incorporer dans le logiciel.
+
+\subsection{Convertir un code Java en diagramme UML}
+\label{sec:spec4}
+
+\paragraph{} A travers ce dernier outils, l'utilisateur à la possibilité d'effectuer une conversion inverse, il lui suffit de sélectionner le dossier qui contient les packages et les fichiers .java de son projet pour que le moteur du logiciel lise ce code et le décompose afin d'en extraire les données et les représenter sous forme d'UML.
